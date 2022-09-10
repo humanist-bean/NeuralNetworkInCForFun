@@ -9,7 +9,7 @@ e.g. number between 0-1 that represents pixels greyness.
 
 3. Output -> Output will need to change depending on the use case of the neural network e.g. if the neural network is trying to guess handwritten numbers, it will need to have 10 outputs to determine a pictures likeliness that it is a number from 0-9.
 
-4. Optimization algorithms -> I will have to apply gradient descent to the network to train it to perform better. This will require applying the gradient descent algorithm after a certain number of training sets to minimize the error. I will have to apply the gradient descent algorithm properly, at the moment the details are hazy but I think it involves using the chain rule with each node and its inputs or outputs. 
+4. Optimization algorithms -> I will have to apply A. gradient descent to the network to train it to perform better. This will require applying the gradient descent algorithm after a certain number of training sets to minimize the error. I will have to apply the gradient descent algorithm properly, at the moment the details are hazy but I think it involves using the chain rule with each node and its inputs or outputs. I will also apply the sigmoid function to each node's output to compress the input * weight + bias into a range between 0 and 1
 
 5. Training -> I will need to use some data to train and test the neural network with. I'm thinking of using the MNIST sets used in the Neural Networks and Deep Learning book for convenience. 
 
