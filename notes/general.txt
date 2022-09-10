@@ -1,0 +1,16 @@
+GENERAL NOTES FOR ALDER'S NEURAL NETWORK IN C
+
+General Architecture (from memory - shitty recollection probably):
+
+1. Input -> Can be anything, but should be simplified into 1 number per input node, 
+e.g. number between 0-1 that represents pixels greyness.
+
+2. Nodes -> Nodes each take an input number and output a number. I think they each also have a weight and bias? I will have to double check the equation but I think you multipy the input by the weight and add the bias (could be opposite tho).
+
+3. Output -> Output will need to change depending on the use case of the neural network e.g. if the neural network is trying to guess handwritten numbers, it will need to have 10 outputs to determine a pictures likeliness that it is a number from 0-9.
+
+4. Optimization algorithms -> I will have to apply gradient descent to the network to train it to perform better. This will require applying the gradient descent algorithm after a certain number of training sets to minimize the error. I will have to apply the gradient descent algorithm properly, at the moment the details are hazy but I think it involves using the chain rule with each node and its inputs or outputs. 
+
+5. Training -> I will need to use some data to train and test the neural network with. I'm thinking of using the MNIST sets used in the Neural Networks and Deep Learning book for convenience. 
+
+
